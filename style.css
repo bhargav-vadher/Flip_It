@@ -1,0 +1,28 @@
+ @font-face {
+  font-family: 'Panic';
+  src: url('./Fonts/Panic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+ @font-face {
+  font-family: 'Rough Splash';
+  src: url('./Fonts/Rough Splash.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+ @font-face {
+  font-family: 'Kampione-DEMO';
+  src: url('./Fonts/Kampione-DEMO.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+ @font-face {
+  font-family: 'Blackout Sunrise';
+  src: url('./Fonts/Blackout Sunrise.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
