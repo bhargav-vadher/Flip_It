@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Recreation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .footer-link {
+            transition: color 0.3s ease;
+        }
+        .footer-link:hover {
+            color: #d1d5db;
+        }
+        .back-to-top {
+            transition: all 0.3s ease;
+        }
+        .back-to-top:hover {
+            transform: translateY(-2px);
+        }
+        .cookie-banner {
+            animation: slideUp 0.5s ease-out;
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Main content placeholder -->
+    <div class="h-screen bg-gray-100 flex items-center justify-center">
+        <p class="text-gray-600 text-lg">Main website content would go here</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <!-- Social Media Icons -->
+        <div class="flex justify-center space-x-6 pt-12 pb-8">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                <i class="fab fa-facebook-f text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                <i class="fas fa-envelope text-xl"></i>
+            </a>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="container mx-auto px-6 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Our Stores -->
+                <div>
+                    <h3 class="text-white font-semibold text-sm mb-6 tracking-wider">OUR STORES</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Ha Noi</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">New York</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">London SF</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Los Angeles</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Chicago</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Las Vegas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Information -->
+                <div>
+                    <h3 class="text-white font-semibold text-sm mb-6 tracking-wider">INFORMATION</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">About Store</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">New Collection</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Woman Dress</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Contact Us</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Latest News</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Our Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Useful Links -->
+                <div>
+                    <h3 class="text-white font-semibold text-sm mb-6 tracking-wider">USEFUL LINKS</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Returns</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Terms & Conditions</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Contact Us</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Latest News</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Our Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Menu -->
+                <div>
+                    <h3 class="text-white font-semibold text-sm mb-6 tracking-wider">FOOTER MENU</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Instagram profile</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">New Collection</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Woman Dress</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Contact Us</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm">Latest News</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 text-sm italic">Purchase Theme</a></li>
+                    </ul>
+                </div>
+
+                <!-- About the Store -->
+                <div>
+                    <h3 class="text-white font-semibold text-sm mb-6 tracking-wider">ABOUT THE STORE</h3>
+                    <div class="space-y-4">
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            STORE - worldwide fashion store since 1978. We sell over 1000+ branded products on our web-site.
+                        </p>
+                        <div class="space-y-2">
+                            <p class="text-gray-400 text-sm flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-2 text-xs"></i>
+                                451 Wall Street, USA, New York
+                            </p>
+                            <p class="text-gray-400 text-sm flex items-center">
+                                <i class="fas fa-phone mt-1 mr-2 text-xs"></i>
+                                Phone: (064) 332-1233
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner fixed bottom-0 left-0 right-0 bg-black text-white p-4 border-t border-gray-800">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <p class="text-sm text-gray-300 mb-4 md:mb-0 md:mr-4">
+                We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies.
+            </p>
+            <div class="flex items-center space-x-4">
+                <button id="acceptCookies" class="border border-white text-white px-6 py-2 text-sm font-medium hover:bg-white hover:text-black transition-colors duration-300">
+                    ACCEPT
+                </button>
+                <a href="#" class="text-gray-300 text-sm hover:text-white transition-colors duration-300">More info</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top fixed bottom-6 right-6 bg-white text-black w-12 h-12 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center">
+        <i class="fas fa-chevron-up text-sm"></i>
+    </button>
+
+    <script>
+        // Cookie banner functionality
+        const cookieBanner = document.getElementById('cookieBanner');
+        const acceptButton = document.getElementById('acceptCookies');
+
+        acceptButton.addEventListener('click', function() {
+            cookieBanner.style.transform = 'translateY(100%)';
+            cookieBanner.style.opacity = '0';
+            setTimeout(() => {
+                cookieBanner.style.display = 'none';
+            }, 300);
+        });
+
+        // Back to top functionality
+        const backToTopButton = document.getElementById('backToTop');
+
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.opacity = '1';
+                backToTopButton.style.visibility = 'visible';
+            } else {
+                backToTopButton.style.opacity = '0';
+                backToTopButton.style.visibility = 'hidden';
+            }
+        });
+
+        // Initialize back to top button as hidden
+        backToTopButton.style.opacity = '0';
+        backToTopButton.style.visibility = 'hidden';
+        backToTopButton.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+    </script>
+</body>
+</html>
