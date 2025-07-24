@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="relative w-full max-w-md h-full md:h-auto">
+        <div class="fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl flex flex-col">
+            <header class="flex items-center justify-between px-6 py-4 border-b border-gray-300">
+                <h2 class="text-white font-bold uppercase text-lg tracking-widest bg-black px-2 py-1">Sign In</h2>
+                <button aria-label="Close sign in form" class="text-sm font-semibold focus:outline-none">Close
+                    &mdash;</button>
+            </header>
+
+            <form class="px-6 py-6 flex-grow overflow-auto" novalidate>
+                <div class="mb-6">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email address <span
+                            class="text-red-600">*</span></label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
+                        placeholder="you@example.com" autocomplete="email" />
+                </div>
+
+                <div class="mb-6">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password <span
+                            class="text-red-600">*</span></label>
+                    <input type="password" id="password" name="password" required
+                        class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
+                        placeholder="********" autocomplete="current-password" />
+                </div>
+
+                <div class="mb-6 text-sm text-gray-600 flex items-center space-x-2">
+                    <svg class="w-5 h-5 flex-shrink-0 text-gray-400" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15 17h5l-1.405-1.405M19 10c0 3.866-3.134 7-7 7S5 13.866 5 10s3.134-7 7-7 7 3.134 7 7z">
+                        </path>
+                    </svg>
+                    <a href="#" class="hover:underline">Forgot your password?</a>
+                </div>
+
+                <button type="submit"
+                    class="w-full py-3 text-center font-semibold border border-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    Login
+                </button>
+            </form>
+
+            <footer class="text-center px-6 py-8 border-t border-gray-300 flex flex-col items-center space-y-4">
+                <svg class="w-16 h-16 text-gray-300" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 0 0-8 0v2"></path>
+                    <circle cx="12" cy="9" r="7" stroke="none"></circle>
+                </svg>
+                <h3 class="font-semibold text-gray-700">No account yet?</h3>
+                <p class="text-gray-600 text-sm max-w-xs">
+                    Registering for this site allows you to access your order status and history. Just fill in the
+                    fields below, and we’ll get a new account set up for you in no time. We will only ask you for
+                    information necessary to make the purchase process faster and easier.
+                </p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
