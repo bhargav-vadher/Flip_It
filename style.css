@@ -5,7 +5,7 @@
   font-style: normal;
 } 
 
- @font-face {
+ /* @font-face {
   font-family: 'Rough Splash';
   src: url('./Fonts/Rough Splash.ttf') format('truetype');
   font-weight: normal;
@@ -17,12 +17,133 @@
   src: url('./Fonts/Kampione-DEMO.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
-} 
+}  */
 
- @font-face {
-  font-family: 'Blackout Sunrise';
-  src: url('./Fonts/Blackout Sunrise.ttf') format('truetype');
+
+  @font-face {  
+  font-family: 'Comfortaa-Bold';
+  src: url('./Fonts/Comfortaa-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-} 
+}  
+
+
+   @font-face {
+  font-family: 'Bring Race';
+  src: url('./Fonts/Bring Race.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}   
+
+
+  @font-face { 
+  font-family: 'Moonrising';
+  src: url('./Fonts/Moonrising.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+
+  @font-face { 
+  font-family: 'Quantify';
+  src: url('./Fonts/Quantify.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+  @font-face { 
+  font-family: 'Edges';
+  src: url('./Fonts/Edges.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+  @font-face { 
+  font-family: 'Dream Head';
+  src: url('./Fonts/Dream Head.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+  @font-face { 
+  font-family: 'Cream Cake Bold';
+  src: url('./Fonts/Cream Cake Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+.gradient-text-8 {
+  background: linear-gradient(180deg, rgb(0, 255, 229), #00ffb7, #6ffff3, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-darkblood {
+  background: linear-gradient(to bottom right, #00ffc8, #4dd2f3, rgb(83, 176, 204));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+   @font-face {
+  font-family: 'Classyvogueregular';
+  src: url('./Fonts/Classyvogueregular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}   
+
+.zoom-in {
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  position: relative;
+}
+
+.img-hover {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  transition: transform 0.5s ease-out;
+}
+
+.zoom-in:hover .img-hover {
+  transform: scale(1.1);
+}
+
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img {
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.product-img.primary {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+.product-img.secondary {
+  opacity: 0;
+  z-index: 2;
+}
+
+.product-card:hover .secondary {
+  opacity: 1;
+}
+
+.product-card:hover .primary {
+  opacity: 0;
+}
+
+
 
